@@ -1,13 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { createStore } from 'redux';
-import { Provider } from 'react-redux';
+import { Provider } from "react-redux";
+import { createStore, combineReducers } from 'redux';
+// import { composeWithDevTools } from 'redux-devtools-extension';
+import counterReducer from './store/reducers/counter';
+import resultReducer from './store/reducers/result';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import reducer from './store/reducer';
 
-const store = createStore(reducer);
+const rootReducer = combineReducers({
+  ctr: counterReducer,
+  res: resultReducer
+});
+
+const store = createStore(
+  rootReducer,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+); 
+
+// const store = createStore(
+//   reducer,
+//   composeWithDevTools(applyMiddleware(...middleware))
+// );
 
 ReactDOM.render(
   <Provider store={store}>

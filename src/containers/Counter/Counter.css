@@ -1,0 +1,27 @@
+.storeButton {
+    background-color: lime;
+    width: 10rem;
+    padding: 10px;
+    margin: 10px;
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    color: darkblue;
+    border-radius: 25px;
+    border: 1px solid deepskyblue;
+}
+
+.storeButton:hover {
+    background-color: pink;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.storedList {
+    text-align: center;
+    list-style-position: inside;
+    list-style: none;
+    font-size: 18px;
+    color: magenta;
+    margin-right: 5%;
+}
