@@ -70,3 +70,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 # redux-counter-maxS
 
 # react-redux-counter
+
+# react-redux-counter
