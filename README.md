@@ -1,3 +1,5 @@
+# React-Redux Counter app to Increment 1, Decrement 1, add X, subtract Y, and store Result
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
